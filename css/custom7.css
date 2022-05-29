@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden;
+  height: 200vh;
+}
+
+.page-top .mv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+    background-color: #d9d9d9;
+    /* background-image: url(../images/top/mv_bg.png); */
+    overflow: hidden;
+  }
+.page-top .mv .cube {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 40vh;
+    height: 40vh;
+    margin: -20vh 0 0 -20vh;
+    transform-style: preserve-3d;
+    transform: translate3d(0px, 0px, 0px) rotate(20deg) rotateY(414.006deg) rotateX(386.006deg);
+    animation: rotating linear 20s infinite alternate-reverse;
+
+  }
+
+
+
+/* @keyframes rotating {
+	 0% {   
+	    transform: translate3d(0px, 0px, 0px) rotate(20deg) rotateY(61deg) rotateX(40deg);
+	 }
+	 50% {
+	    transform: translate3d(0px, 0px, 0px) rotate(20deg) rotateY(200.006deg) rotateX(170.006deg);
+	 }
+	100% {
+	    transform: translate3d(0px, 0px, 0px) rotate(20deg) rotateY(414.006deg) rotateX(386.006deg);
+	 }
+} */
+
+  .page-top .mv .cube span {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .page-top .mv .cube span:nth-child(1) {
+    background-color: #fff;
+    transform: translateZ(20vh);
+  }
+  .page-top .mv .cube span:nth-child(2) {
+    background-color: #fff;
+    transform: rotateY(180deg) translateZ(20vh);
+  }
+  .page-top .mv .cube span:nth-child(3) {
+    background-color: #f4f4f4;
+    transform: rotateY(90deg) translateZ(20vh);
+  }
+  .page-top .mv .cube span:nth-child(4) {
+    background-color: #f4f4f4;
+    transform: rotateY(-90deg) translateZ(20vh);
+  }
+  .page-top .mv .cube span:nth-child(5) {
+    background-color: #ededed;
+    transform: rotateX(90deg) translateZ(20vh);
+  }
+  .page-top .mv .cube span:nth-child(6) {
+    background-color: #ededed;
+    transform: rotateX(-90deg) translateZ(20vh);
+  }
+
+  .page-top .mv p {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    transform: translateZ(1000px);
+  }
+  .page-top .mv p span {
+    display: inline-block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .page-top .mv .catch {
+    font-family: "Arial Black", sans-serif;
+    font-size: 5.2rem;
+    letter-spacing: -0.02em;
+    font-weight: bold;
+  }
+  .page-top .mv .name {
+    margin-top: 0.25em;
+    padding-left: 0.87em;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.87em;
+  }
+  .pc-hidden {
+    display: none;
+  }
+  /* .catch{
+    transition: all 0.3s;
+  } */
+  .mv .catch .n1{
+    transform: translate(0, 0);
+    transition: all 0.1s;
+  }
+  .mv.active .catch .n1{
+    transform: translate(-60vw, -70vh);
+    transition: all 0.5s 0.3s;
+  }
+  .mv .catch .n2{
+    transform: translate(0, 0);
+    transition: all 0.1s;
+  }
+  .mv.active .catch .n2{
+    transform: translate(-30vw, 70vh);
+    transition: all 0.5s 0.3s;
+  }
+  .mv .catch .n3{
+    transform: translate(0, 0);
+    transition: all 0.1s;
+  }
+  .mv.active .catch .n3{
+    transform: translate(-60vw, -70vh);
+    transition: all 0.5s 0.3s;
+  }
+  .mv .catch .n4{
+    transform: translate(0, 0);
+    transition: all 0.1s;
+  }
+  .mv.active .catch .n4{
+    transform: translate(-30vw, 70vh);
+    transition: all 0.3s 0.3s;
+  }
+  .mv .catch .n5{
+    transform: translate(0, 0);
+    transition: all 0.1s;
+  }
+  .mv.active .catch .n5{
+    transform: translate(5vw, -70vh);
+    transition: all 0.5s 0.3s;
+  }
+  .mv .name span {
+    transform: translate(0, 0);
+    transition: all 1s;
+  }  
+  .mv.active .name span {
+    opacity: 0;
+    transition: all 2s;
+  }
+  .mv.active .name .p1{
+    transform: translate(-33vw, 0px);
+    opacity: 0;
+  }
+  .mv.active .name .p2{
+    transform: translate(-30vw, 0px);
+  }
+  .mv.active .name .p3{
+    transform: translate(-27vw, 0px);
+  }
+  .mv.active .name .p4{
+    transform: translate(-24vw, 0px);
+  }
+  .mv.active .name .p5{
+    transform: translate(-21vw, 0px);
+  }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
